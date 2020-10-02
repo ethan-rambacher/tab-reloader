@@ -1,0 +1,13 @@
+{
+    "name": "Tab Reloader",
+    "version": "1.0",
+    "description": "Reloads a tab periodically",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs",
+        "alarms"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+}
