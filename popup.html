@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <style>
-        button {
-            height: 30px;
-            width: 30px;
-            outline: none;
-        }
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        font-size: 16px;
+      }
+      button {
+        padding: 0.5em;
+        margin: 0.5em;
+        border-radius: 1em;
+        min-width: 10em;
+        border: none;
+      }
+      .button--start {
+        background-color: #95d58e;
+      }
+      .button--stop {
+        background-color: #c9190b;
+        color: white;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <button id="startButton" >Start</button>
-    <button id="stopButton">Stop</button>
+  <body>
+    <div>Reload this tab every 60 seconds</div>
+    <hr />
+    <button id="startButton" class="button--start">Start</button>
+    <button id="stopButton" class="button--stop">Stop</button>
     <script src="popup.js"></script>
-</body>
-
+  </body>
 </html>
